@@ -8,14 +8,52 @@
         - Sail
       > Laravel Sail is a light-weight command-line interface for interacting with Laravel's default Docker development environment. Sail provides a great starting point for building a Laravel application using PHP, MySQL, and Redis without requiring prior Docker experience.
     - PHPUnit
-- Platforms
-    - Docker
+- MySQL
+- Redis
+- Docker
+- [Mailhog](https://github.com/mailhog/MailHog)
+  > MailHog is an email testing tool for developers:
+  > - Configure your application to use MailHog for SMTP delivery View messages in the web UI, or retrieve them with the JSON
+  > - API Optionally release messages to real SMTP servers for delivery
 
 ## Todo
 
-- [ ] Authentication
+- [x] JWT
+    - [x] Authorization
+    - [x] Authentication
+- [x] User
+    - [x] Login
+    - [x] Register
+    - [x] Profile
+    - [x] Refresh Token
+    - [x] Loggout
+- [ ] My birthday agenda
+    - [ ] Contact
+        - [ ] Create
+            - Thumb image (optional)
+            - Name
+            - Birthday
+            - Annotation (optional)
+        - [ ] List
+            - Thumb image
+            - Name (ordered)
+            - Birthday (ordered)
+        - [ ] Update
+            - Thumb image
+              > Delete and send another
+            - Name
+            - Birthday
+            - Annotation (optional)
+        - [ ] Delete
+            - Contact ID
 - [ ] Tests
     - [ ] Unit test
+        - [ ] User
+            - [ ] Login
+            - [ ] Register
+            - [ ] Profile
+            - [ ] Refresh Token
+            - [ ] Loggout
 
 ## License
 
