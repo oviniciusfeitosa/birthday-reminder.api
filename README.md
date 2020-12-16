@@ -49,7 +49,7 @@
         - [ ] Delete
             - Contact ID
 - [ ] Tests
-    - [ ] Unit test
+    - [ ] Feature
         - [ ] User
             - [ ] Login
             - [ ] Register
