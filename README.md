@@ -48,14 +48,14 @@
             - Annotation (optional)
         - [ ] Delete
             - Contact ID
-- [ ] Tests
-    - [ ] Feature
-        - [ ] User
-            - [ ] Login
-            - [ ] Register
-            - [ ] Profile
-            - [ ] Refresh Token
-            - [ ] Loggout
+- [x] Tests
+    - [x] Feature
+        - [x] Auth
+            - [x] Login
+            - [x] Register
+            - [x] Profile
+            - [x] Refresh Token
+            - [x] Loggout
 
 ## License
 

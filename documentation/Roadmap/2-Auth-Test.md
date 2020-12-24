@@ -14,11 +14,16 @@
 - Creating a feature test
 
     ```sh
-    sail artisan make:test UserTest
+    sail artisan make:test AuthTest
     ```
 
 - Execute your first test
 
     ```sh
-    sail artisan test
+    sail artisan test --env=testing
+    ```
+- Execute the tests for Feature suite
+
+    ```sh
+    php artisan test --testsuite=Feature --stop-on-failure
     ```
