@@ -27,3 +27,7 @@
     ```sh
     php artisan test --testsuite=Feature --stop-on-failure
     ```
+
+## References
+
+- https://dev.to/seankerwin/laravel-8-rest-api-with-resource-controllers-5bok

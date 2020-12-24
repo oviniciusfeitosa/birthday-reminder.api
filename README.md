@@ -24,6 +24,7 @@
     - [x] Authorization
     - [x] Authentication
 - [x] User
+    - [ ] E-mail activation
     - [x] Login
     - [x] Register
     - [x] Profile
