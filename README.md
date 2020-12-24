@@ -55,7 +55,7 @@
             - [x] Register
             - [x] Profile
             - [x] Refresh Token
-            - [x] Loggout
+            - [x] Logout
 
 ## License
 
