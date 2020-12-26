@@ -1,5 +1,7 @@
 # Roadmap
 
+In this step we will send an email verification link before activating the user account.
+
 ## E-mail Activation
 
 - Mailhog...
