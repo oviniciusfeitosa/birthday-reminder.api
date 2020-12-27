@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Testing\TestResponse;
@@ -87,6 +88,8 @@ class AuthTest extends TestCase
         $tempUser = $this->generateANewUser();
         $this->createANewUser($tempUser);
         $user = User::where('email', $tempUser->email)->first();
+        $user->email_verified_at = Carbon::now();
+        $user->save();
         $token = JWTAuth::fromUser($user);
         $response = $this->get(route('auth.profile'), [
             'Authorization' => "Bearer {$token}"
@@ -99,6 +102,19 @@ class AuthTest extends TestCase
                 'name',
                 'email',
             ]);
+    }
+
+    public function testProfileRouteWithoutVerifiedEmail()
+    {
+        $tempUser = $this->generateANewUser();
+        $this->createANewUser($tempUser);
+        $user = User::where('email', $tempUser->email)->first();
+        $token = JWTAuth::fromUser($user);
+        $response = $this->get(route('auth.profile'), [
+            'Authorization' => "Bearer {$token}"
+        ]);
+
+        $response->assertStatus(302);
     }
 
     public function testProfileRouteWithoutToken()

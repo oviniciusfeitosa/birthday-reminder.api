@@ -16,7 +16,8 @@ Route::group([
         ->post('/login', [AuthController::class, 'login']);
     Route::domain('auth')
         ->name('auth.profile')
-        ->get('/user-profile', [AuthController::class, 'userProfile']);
+        ->get('/user-profile', [AuthController::class, 'userProfile'])
+        ->middleware('verified');
     Route::domain('auth')
         ->name('auth.refresh')
         ->post('/refresh', [AuthController::class, 'refresh']);
