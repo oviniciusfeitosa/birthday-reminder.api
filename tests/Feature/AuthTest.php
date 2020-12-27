@@ -171,16 +171,4 @@ class AuthTest extends TestCase
             ]);
     }
 
-//    //Create user and authenticate the user
-//    protected function authenticate(){
-//        $user = User::create([
-//            'name' => 'test',
-//            'email' => 'test@gmail.com',
-//            'password' => Hash::make('secret1234'),
-//        ]);
-//        $token = JWTAuth::fromUser($user);
-//        return $token;
-//    }
-//
-
 }
